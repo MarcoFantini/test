@@ -1,0 +1,136 @@
+{
+    nodes: [
+      {
+        id: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;TOTAL_VENDORS',
+        workstation: '/MASTERAGENTS1',
+        workflow: 'ORDER_PROCESS',
+        job: 'TOTAL_VENDORS',
+        isSelected: true,
+        status: 'Waiting',
+        folder: '/',
+        start: -1
+      },
+      {
+        id: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;SIX_WK_MAX_ORDERS',
+        workstation: '/MASTERAGENTS1',
+        workflow: 'ORDER_PROCESS',
+        job: 'SIX_WK_MAX_ORDERS',
+        isSelected: true,
+        status: 'Waiting',
+        folder: '/',
+        start: -1
+      },
+      {
+        id: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;UPDATE_ORDER_TABLE',
+        workstation: '/MASTERAGENTS1',
+        workflow: 'ORDER_PROCESS',
+        job: 'UPDATE_ORDER_TABLE',
+        isSelected: true,
+        status: 'Waiting',
+        folder: '/',
+        start: -1
+      },
+      {
+        id: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;SIX_WK_AVG_ORDERS',
+        workstation: '/MASTERAGENTS1',
+        workflow: 'ORDER_PROCESS',
+        job: 'SIX_WK_AVG_ORDERS',
+        isSelected: true,
+        status: 'Waiting',
+        folder: '/',
+        start: -1
+      },
+      {
+        id: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;LAST_WK_TOTAL',
+        workstation: '/MASTERAGENTS1',
+        workflow: 'ORDER_PROCESS',
+        job: 'LAST_WK_TOTAL',
+        isSelected: true,
+        status: 'Waiting',
+        folder: '/',
+        start: -1
+      },
+      {
+        id: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;NEW_ORDERS',
+        workstation: '/MASTERAGENTS1',
+        workflow: 'ORDER_PROCESS',
+        job: 'NEW_ORDERS',
+        isSelected: true,
+        status: 'Ready',
+        folder: '/',
+        start: -1
+      },
+      {
+        id: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;AUTHORIZATION',
+        workstation: '/MASTERAGENTS1',
+        workflow: 'ORDER_PROCESS',
+        job: 'AUTHORIZATION',
+        isSelected: true,
+        status: 'Waiting',
+        folder: '/',
+        start: -1
+      },
+      {
+        id: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;PROCESS_ORDERS',
+        workstation: '/MASTERAGENTS1',
+        workflow: 'ORDER_PROCESS',
+        job: 'PROCESS_ORDERS',
+        isSelected: true,
+        status: 'Waiting',
+        folder: '/',
+        start: -1
+      }
+    ],
+    links: [
+      {
+        source: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;NEW_ORDERS',
+        target: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;TOTAL_VENDORS',
+        color: 'white'
+      },
+      {
+        source: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;UPDATE_ORDER_TABLE',
+        target: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;SIX_WK_MAX_ORDERS',
+        color: 'white'
+      },
+      {
+        source: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;NEW_ORDERS',
+        target: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;UPDATE_ORDER_TABLE',
+        color: 'white'
+      },
+      {
+        source: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;UPDATE_ORDER_TABLE',
+        target: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;SIX_WK_AVG_ORDERS',
+        color: 'white'
+      },
+      {
+        source: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;UPDATE_ORDER_TABLE',
+        target: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;LAST_WK_TOTAL',
+        color: 'white'
+      },
+      {
+        source: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;LAST_WK_TOTAL',
+        target: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;AUTHORIZATION',
+        color: 'white'
+      },
+      {
+        source: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;SIX_WK_AVG_ORDERS',
+        target: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;AUTHORIZATION',
+        color: 'white'
+      },
+      {
+        source: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;SIX_WK_MAX_ORDERS',
+        target: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;AUTHORIZATION',
+        color: 'white'
+      },
+      {
+        source: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;TOTAL_VENDORS',
+        target: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;PROCESS_ORDERS',
+        color: 'white'
+      },
+      {
+        source: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;AUTHORIZATION',
+        target: 'MASTERAGENTS;0AAAAAAAAAAAFPHR;PROCESS_ORDERS',
+        color: 'white'
+      }
+    ]
+  }
