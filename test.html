@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AR.js 3D Force Graph</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+    </style>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/3.4.7/aframe/build/aframe-ar-nft.js"></script>
+    <script src="https://unpkg.com/3d-force-graph"></script>
+    <script>
+      const data = {
+        /*** INSERT DATA HERE */
+      };
+
+      AFRAME.registerComponent("force-graph-ar", {
+        schema: {
+          root: { default: false },
+          jsonUrl: { type: "string", default: "" },
+          nodes: { type: "array", default: [] },
+          links: { type: "array", default: [] },
+          nodeLabel: { type: "string", default: "id" },
+          nodeAutoColorBy: { type: "string", default: "group" },
+          numDimensions: { type: "number", default: 3 },
+          dagMode: { type: "string", default: "" },
+        },
+
+        init: function () {
+          const el = this.el;
+          const data = this.data;
+          const tempContainer = document.createElement("div");
+          tempContainer.style.width = "500px";
+          tempContainer.style.height = "500px";
+          tempContainer.style.position = "absolute";
+          tempContainer.style.top = "-9999px";
+          tempContainer.style.left = "-9999px";
+          document.body.appendChild(tempContainer);
+
+          let Graph;
+          let graphObject3D;
+
+          const loadGraph = () => {
+            if (Graph) {
+              Graph._destructor();
+            }
+
+            Graph = ForceGraph3D()(tempContainer)
+              .nodeLabel("path")
+              .nodeAutoColorBy("module")
+              .dagMode("td")
+              .dagLevelDistance(40)
+              .nodeVal("size")
+              .nodeThreeObject((node) => {
+                const width = 32;
+                const height = 12;
+                const depth = 2;
+
+                //Upper Panel
+                const domNodeUpperPanel = document.createElement("a-entity");
+                domNodeUpperPanel.setAttribute("geometry", {
+                  primitive: "box",
+                  height: height * 0.3,
+                  width,
+                  depth,
+                });
+                domNodeUpperPanel.setAttribute("material", {
+                  color: "#7a7a7a",
+                });
+
+                //Bottom Panel
+                const domNodeBottomPanel = document.createElement("a-entity");
+                domNodeBottomPanel.setAttribute("geometry", {
+                  primitive: "box",
+                  height: height * 0.7,
+                  width,
+                  depth,
+                });
+                domNodeBottomPanel.setAttribute("material", {
+                  color: "#fefefe",
+                });
+                domNodeBottomPanel.setAttribute("position", {
+                  y: -height * 0.15 - height * 0.35,
+                });
+
+                //Text
+                const domNodeBottomPanelText = document.createElement("a-entity");
+                const label = ${node.workstation}#${node.workflow}\n${node.job};
+
+                domNodeBottomPanelText.setAttribute("text", {
+                  value: label,
+                  color: "#424242",
+                  align: "center",
+                  width: width * 0.9,
+                  wrapCount: 25,
+                  font: window.AFRAME.customFont || null,
+                  negate: window.AFRAME.customFont ? "false" : "true",
+                });
+                domNodeBottomPanelText.setAttribute("position", {
+                  z: depth / 2 + 1,
+                });
+                domNodeBottomPanel.appendChild(domNodeBottomPanelText);
+                const domNode = document.createElement("a-entity");
+                domNode.appendChild(domNodeUpperPanel);
+                domNode.appendChild(domNodeBottomPanel);
+                this.el.appendChild(domNode);
+
+                return domNode.object3D;
+              })
+              .graphData({ nodes: data.nodes, links: data.links })
+              .jsonUrl(data.jsonUrl || null)
+              .onEngineStop(() => {
+                if (!graphObject3D) {
+                  const graphScene = Graph.scene();
+                  graphObject3D = new THREE.Object3D();
+
+                  while (graphScene.children.length > 0) {
+                    graphObject3D.add(graphScene.children[0]);
+                  }
+
+                  el.object3D.add(graphObject3D);
+
+                  console.log("Graph loaded and attached to A-Frame entity!");
+                }
+              });
+          };
+
+          loadGraph();
+
+          this.remove = function () {
+            if (Graph) {
+              Graph._destructor();
+            }
+            if (tempContainer.parentNode) {
+              tempContainer.parentNode.removeChild(tempContainer);
+            }
+            if (graphObject3D && el.object3D.children.includes(graphObject3D)) {
+              el.object3D.remove(graphObject3D);
+            }
+          };
+        },
+
+        update: function (oldData) {
+          const data = this.data;
+
+          if (
+            data.jsonUrl !== oldData.jsonUrl ||
+            !AFRAME.utils.deepEqual(data.nodes, oldData.nodes) ||
+            !AFRAME.utils.deepEqual(data.links, oldData.links)
+          ) {
+            if (
+              this.graphObject3D &&
+              this.el.object3D.children.includes(this.graphObject3D)
+            ) {
+              this.el.object3D.remove(this.graphObject3D);
+              this.graphObject3D = null;
+            }
+            this.init();
+          }
+        },
+      });
+    </script>
+  </head>
+  <body style="margin: 0px; overflow: hidden">
+    <a-scene
+      vr-mode-ui="enabled: false;"
+      embedded
+      arjs="sourceType: webcam; debugUIEnabled: false;"
+    >
+      <a-marker preset="hiro">
+        <a-entity
+          id="force-graph-container"
+          position="0 1 -3"
+          scale="0.015 0.015 0.015"
+          force-graph-ar
+        ></a-entity>
+      </a-marker>
+
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+
+  <script>
+    const graphDomNode = document.getElementById("force-graph-container");
+
+    const props = {
+      nodes: data.nodes,
+      links: data.links,
+      linkWidth: 2,
+      linkDirectionalArrowLength: 1.5,
+      linkDirectionalArrowRelPos: 1,
+      linkDirectionalParticleSpeed: 0.005,
+      numDimensions: 3,
+      dagMode: "td",
+    };
+
+    if (graphDomNode) {
+      graphDomNode.setAttribute("force-graph-ar", props);
+      console.log("graph data loaded", graphDomNode);
+    }
+  </script>
+</html>
