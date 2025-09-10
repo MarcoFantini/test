@@ -1,0 +1,1184 @@
+{
+    "expand": "schema,names",
+    "startAt": 0,
+    "maxResults": 50,
+    "total": 49,
+    "issues": [
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1303846",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1303846",
+            "key": "WAAI-1790",
+            "fields": {
+                "summary": "KPI page - tuning pop over visual corrections",
+                "description": "[https://www.figma.com/design/gaBLq9tUWSAdBkIjP6sJCs/AIDA?node-id=12166-16284&t=eqFfpdcB35MAcj8n-1|https://www.figma.com/design/gaBLq9tUWSAdBkIjP6sJCs/AIDA?node-id=12166-16284&t=eqFfpdcB35MAcj8n-1]\n\n \n\n*Rules and corrections For both pop overs*\n\n# -pop over title must be bold + lower case-\n# -add close icon button-\n# -reduce interline space for text \"the higher....\"-\n# slider: add the other circles/steps (as per mock up)\n*_is not possible because of the slider of patronus_* [~accountid:712020:f7390af8-5d29-46cf-ac71-1084ccbfb917] \n# -reduce interline space and size tex (12 px) of text below slider-\n# -reduce size text bottom (12px)-\n# -buttons must be inside pop over-\n# Save button must be disabled by default (only enabled if changes)\n*_is not possible because of the logic cannot know at the moment te actual state you can only change_* [~accountid:712020:f7390af8-5d29-46cf-ac71-1084ccbfb917] \n# if user clicks outside pop over, the pop over closes\n*_is not possible because of the slider of patronus_* [~accountid:712020:f7390af8-5d29-46cf-ac71-1084ccbfb917] \n# -when resizing the page, the pop over must stay attached to the button that opened it (currently floating)-\n\n \n\n-->- *-pop over for Global tuning:-* -KPI prediction- +-global-+ -tuning- \n\n* -complete text below slider: :- \n\n-\"Modifications will override the single KPI settings.-\n\n  -Changes will be applied after next retrain\"-\n\n-->- *-pop over for SINGLE KPI tuning:-* -KPI prediction tuning- \n\n* -correct title: \"KPI prediction tuning\"-\n* -remove \"global\" from title)-\n\n \n\n ",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1307849",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1307849",
+            "key": "WA-149968",
+            "fields": {
+                "summary": "Keep Session Alive is not working for AgenticAIBuilder - extend this functionality",
+                "description": "The icon pi-times is being modified by the CSS of Agents Builder, while on the other UnO pages should not be\n\n\n!image-20250821-145641.png|width=100%,alt=\"image-20250821-145641.png\"!\n\nCurrent:\n\n\n!image-20250821-145703.png|width=33.33333333333333%,alt=\"image-20250821-145703.png\"!\n\nExpected: (when manually disabling the Agents Builder CSS)\n\n\n!image-20250821-145732.png|width=33.33333333333333%,alt=\"image-20250821-145732.png\"!\n\nSame problem with “title” class that overrides the nested one in Human Tasks\n\n!image-20250904-105542.png|width=75%,alt=\"image-20250904-105542.png\"!",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/3",
+                    "description": "This work item is being actively worked on at the moment by the assignee.",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/inprogress.png",
+                    "name": "In Progress",
+                    "id": "3",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/4",
+                        "id": 4,
+                        "key": "indeterminate",
+                        "colorName": "yellow",
+                        "name": "In Progress"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1302714",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1302714",
+            "key": "WA-149119",
+            "fields": {
+                "summary": "CSS Agentic is overriding other pages",
+                "description": "The icon pi-times is being modified by the CSS of Agents Builder, while on the other UnO pages should not be\n\n\n!image-20250821-145641.png|width=100%,alt=\"image-20250821-145641.png\"!\n\nCurrent:\n\n\n!image-20250821-145703.png|width=33.33333333333333%,alt=\"image-20250821-145703.png\"!\n\nExpected: (when manually disabling the Agents Builder CSS)\n\n\n!image-20250821-145732.png|width=33.33333333333333%,alt=\"image-20250821-145732.png\"!\n\nSame problem with “title” class that overrides the nested one in Human Tasks\n\n!image-20250904-105542.png|width=75%,alt=\"image-20250904-105542.png\"!",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/3",
+                    "description": "This work item is being actively worked on at the moment by the assignee.",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/inprogress.png",
+                    "name": "In Progress",
+                    "id": "3",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/4",
+                        "id": 4,
+                        "key": "indeterminate",
+                        "colorName": "yellow",
+                        "name": "In Progress"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1230249",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1230249",
+            "key": "TVREX-403",
+            "fields": {
+                "summary": "TVREX - 3D Graph - embedded on UnO UI SIde",
+                "description": null,
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "924549",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/924549",
+            "key": "TVREX-400",
+            "fields": {
+                "summary": "Selection Engine not working properly",
+                "description": null,
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "924616",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/924616",
+            "key": "TVREX-398",
+            "fields": {
+                "summary": "Test for the latest stable changes",
+                "description": "*We have to test interaction for:*\r\n * {color:#00875a}*pinch move*{color}\r\n * {color:#00875a}*controller move*{color}\r\n * {color:#00875a}*mouse move*{color} ",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/3",
+                    "description": "This work item is being actively worked on at the moment by the assignee.",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/inprogress.png",
+                    "name": "In Progress",
+                    "id": "3",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/4",
+                        "id": 4,
+                        "key": "indeterminate",
+                        "colorName": "yellow",
+                        "name": "In Progress"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "924636",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/924636",
+            "key": "TVREX-390",
+            "fields": {
+                "summary": "Initial Skeleton for TVREX-2.0",
+                "description": "In particular:\r\n * T-VREX-2.0: some stable changes after the demo - need test\r\n * T-VREX-2.0: Enanchement & Clean Code\r\n * T-VREX-2.0: Added AdvancedDeck & Some Enums utils\r\n * T-VREX-2.0: Added FroceGraph base Functionality\r\n * T-VREX-2.0: Added some Enums\r\n * T-VREX-2.0: Added Draggable Aframe Component\r\n * T-VREX-2.0: Complete Scheleton for new interactions",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "924511",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/924511",
+            "key": "TVREX-387",
+            "fields": {
+                "summary": "Create for version 2 of vr-react-components",
+                "description": null,
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "924638",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/924638",
+            "key": "TVREX-386",
+            "fields": {
+                "summary": "Home Button doesn't reset the center graph of the home room",
+                "description": null,
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "924645",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/924645",
+            "key": "TVREX-385",
+            "fields": {
+                "summary": "defaultProps on vr-react-components and patronus going to be deprecated",
+                "description": "!image-2024-05-08-13-30-34-000.png|width=1161,height=110!\r\n\r\n \r\n\r\nremove default props and use javascript default parameters",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/3",
+                    "description": "This work item is being actively worked on at the moment by the assignee.",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/inprogress.png",
+                    "name": "In Progress",
+                    "id": "3",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/4",
+                        "id": 4,
+                        "key": "indeterminate",
+                        "colorName": "yellow",
+                        "name": "In Progress"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "924607",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/924607",
+            "key": "TVREX-382",
+            "fields": {
+                "summary": "aframe > 1.3.0 breaks Topology View",
+                "description": "We are trying to install 1.5.0 version of aframe with significant improvements, but now we are stucked in 1.3.0 for a problem releated to Topology graph that couldn't be moved. \r\n\r\nIf we try to move it it disappear",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/3",
+                    "description": "This work item is being actively worked on at the moment by the assignee.",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/inprogress.png",
+                    "name": "In Progress",
+                    "id": "3",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/4",
+                        "id": 4,
+                        "key": "indeterminate",
+                        "colorName": "yellow",
+                        "name": "In Progress"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "924547",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/924547",
+            "key": "TVREX-336",
+            "fields": {
+                "summary": "New features & Optimization",
+                "description": null,
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "924505",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/924505",
+            "key": "TVREX-335",
+            "fields": {
+                "summary": "AIDA Virtual Room",
+                "description": "This Epic includes all of the activities for the integration of AIDA in TVREX (costs, tasks, bug...)",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "924509",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/924509",
+            "key": "TVREX-332",
+            "fields": {
+                "summary": "Clara V2 & TVREX integration",
+                "description": "This Epic includes all of the integration functionalities of Clara V2 for TVREX",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "924703",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/924703",
+            "key": "TVREX-327",
+            "fields": {
+                "summary": "Preparing a demo Unity",
+                "description": "list of API (last updated to 03/05/2023) \r\n * +For the user+\r\n*\"/api/initializeSession\"*\r\n*\"/api/getUserEngines\"* - _needs /initializeSession_\r\n * +For the home room's KPI+ - _needs /getUserEngines_\r\n*\"/api/getJobInError\"*\r\n*\"/api/getJobInLate\"*\r\n*\"/api/getMinDuration\"*\r\n*\"/api/getPendingPrompts\"*\r\n*\"/api/getUnvailableWorkstation\"*\r\n*\"/api/getAvailableWorkstation\"*\r\n * +For home room's central graph+ - _needs /initializeSession_\r\n*\"/api/getCenterChartData\"*\r\n * +For Clara+\r\n*\"/api/getClaraInfo\"* - _needs /initializeSession_\r\n*\"/api/sendClaraIntent\"* - _needs /getClaraInfo_",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10015",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10015",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "924544",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/924544",
+            "key": "TVREX-297",
+            "fields": {
+                "summary": "Vulnerabilities Management",
+                "description": null,
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "924537",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/924537",
+            "key": "TVREX-266",
+            "fields": {
+                "summary": "Update for the library aframe",
+                "description": null,
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "924337",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/924337",
+            "key": "TVREX-233",
+            "fields": {
+                "summary": "Make \"spatial voice\" based on users position",
+                "description": null,
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10015",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10015",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "924523",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/924523",
+            "key": "TVREX-223",
+            "fields": {
+                "summary": "Add support for External API",
+                "description": "Move T-VREX out of DWC internal API and support official WA external API.",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "924548",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/924548",
+            "key": "TVREX-207",
+            "fields": {
+                "summary": "When no data in the timerange an empty graphic with axes shall be visualized",
+                "description": "When time range selecting does not include any data in that interval, no graphic is visualized\r\n\r\n !image-2020-12-15-16-13-30-889.png|thumbnail! ",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "924647",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/924647",
+            "key": "TVREX-206",
+            "fields": {
+                "summary": "Job statistics by month not updated",
+                "description": "When I click 2 or 3 months ago I still have the image of the data of this month.\r\nMy tvrex is associated with 10.14.37.194 Workload automation that 2/3  months ago didn't exsist",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "924530",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/924530",
+            "key": "TVREX-163",
+            "fields": {
+                "summary": "Unavailable Engines (getEngineInfo) & Possible Enanchment of UI",
+                "description": "As per DWC current state, following usecases happening:\r\n\r\n1- Partial data unavailbility (some engines selected not available - others are available)\r\n\r\n!image-2020-12-01-16-26-56-767.png|width=729,height=376!\r\n\r\n2- Total data unavailability (all engines selected not available)",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1307694",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1307694",
+            "key": "SOL-1006",
+            "fields": {
+                "summary": "Filters Apply Across All Tabs Instead of Independently",
+                "description": "*Steps to Reproduce*\n\n# Navigate to any of the following tabs: Agent Catalog, AI Agents, Package, or Credential.\n# Apply a filter using the Classification filter, Search bar, or Status checkboxes.\n# Switch to the other tabs.\n# Observe that the same filter is applied in all tabs instead of only the one where it was applied.\n\n*Actual Result*\nFilters are applied across all tabs when applied in any single tab.\n\n*Expected Result*\nEach tab should apply filters independently without affecting the others.",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1307666",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1307666",
+            "key": "SOL-1005",
+            "fields": {
+                "summary": "Duplicate Scroll Bar Displayed for All categories filter in both the Agent Catalog and AI Agents Page",
+                "description": "*Steps to Reproduce*\n\n# Navigate to the *Agent Catalog* page or *AI Agents* page.\n# Expand the *All libraries* section.\n# Observe the presence of two scroll bars:\n\n*Actual Result*\nTwo scroll bars are displayed on the same line when expanding the All libraries section.\n\n*Expected Result*\nOnly one scroll bar should be displayed.",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1307562",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1307562",
+            "key": "SOL-1000",
+            "fields": {
+                "summary": "Extra \"Save\" button still appears after creating an agent from template",
+                "description": null,
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1307560",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1307560",
+            "key": "SOL-999",
+            "fields": {
+                "summary": "User not redirected to AI Agent page after creating agent from template",
+                "description": null,
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1305847",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1305847",
+            "key": "SOL-987",
+            "fields": {
+                "summary": "\"Save Changes\" button shows error and changes to \"Save\" button when selecting previously configured LLM in edit mode",
+                "description": "*Steps to Reproduce:*\n\n# Navigate to *Edit Agent* page.\n# Select the *previously configured LLM* from the dropdown.\n# Observe that the *Save Changes* button is enabled.\n# Click the *Save Changes* button.\n# An *error message* appears.\n# Close the error message.\n# Notice that the button now appears as *Save* instead of *Save Changes*.\n# Click the *Save* button → The agent updates successfully.\n\n*Actual Result:*\n\n* Error message appears on clicking *Save Changes*.\n* Button label changes to *Save* after dismissing the error.\n* Clicking *Save* updates the agent with the previous value.\n\n*Expected Result:*\n\n* The Save Changes button should only be enabled when the LLM value is modified. If the user re-selects the previously configured LLM, the button must remain disabled, consistent with the behavior of other fields.",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1305705",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1305705",
+            "key": "SOL-985",
+            "fields": {
+                "summary": "Template page flickers momentarily when navigating to AI Agents tab",
+                "description": "*Steps to Reproduce:*\n\n# Log in to the application.\n# Navigate to any tab other than *AI Agents* (e.g., Credentials/ Packages).\n# Click on the *AI Agents* tab.\n# Observe the page load transition carefully.\n\n*Actual Result:*\nThe *Template page flickers* momentarily before the AI Agents content loads.\n\n*Expected Result:*\nThe AI Agents page should load smoothly without any flicker of the Template page.",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1303455",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1303455",
+            "key": "SOL-960",
+            "fields": {
+                "summary": "Package/agents list view icons (Edit, Duplicate, Test, Delete) disabled after “Failed to fetch” error until page refresh",
+                "description": "*Steps to Reproduce:*\n\n# Navigate to the *Packages/agents* page in list view.\n# Trigger a scenario where *“Failed to fetch”* error appears (Click on Test icon for the package/agent which has invalid tool)\n# After the error appears, try clicking on:\n#* *Edit* icon\n#* *Duplicate* icon\n#* *Test* icon\n#* *Delete* icon\n# Observe that none of the icons are clickable.\n# Refresh the page.\n# Verify that the icons become functional again after refresh.\n\n*Expected Result:*\nAction icons (*Edit, Duplicate, Test, Delete*) should remain functional even if a *“Failed to fetch”* error occurs.\n\n*Actual Result:*\nAll action icons are disabled and unresponsive after the error, until the page is refreshed.",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/4",
+                    "description": "This work item was once resolved, but the resolution was deemed incorrect. From here the work items are either reopened, or are closed.",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/reopened.png",
+                    "name": "Reopened",
+                    "id": "4",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1302461",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1302461",
+            "key": "SOL-943",
+            "fields": {
+                "summary": "When applying filters in the AI Agents page, the results are inconsistent:",
+                "description": "*Steps to Reproduce:*\n\n# Go to *AI Agents page*.\n# Apply *Show also template* filter.\n# Apply *In Progress* filter.\n# Observe that templates appear at the top, but *Ready cards also show up incorrectly*.\n# Repeat with *Show also template + Ready filter*.\n# Observe that results also include *In progress* cards.\n\n*Expected Result:*\n\n* When *In Progress* + *Show also template* filters are applied → only _In Progress agents_ and _Templates_ should be shown.\n* When *Ready* + *Show also template* filters are applied → only _Ready agents_ and _Templates_ should be shown.\n\n*Actual Result:*\n\n* Extra cards (_Ready_ or _In Progress_) are shown even when only one status filter is applied with templates.",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/4",
+                    "description": "This work item was once resolved, but the resolution was deemed incorrect. From here the work items are either reopened, or are closed.",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/reopened.png",
+                    "name": "Reopened",
+                    "id": "4",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1301739",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1301739",
+            "key": "SOL-935",
+            "fields": {
+                "summary": "Credential type dropdown shows \"No Options\" after page refresh in Create Agent flow",
+                "description": "*Steps to Reproduce:*\n\n# Go to *Create Agent* page.\n# Refresh the page.\n# Navigate to *Credential tab → Add Credential → Credential Type dropdown*.\n# Observe: *\"No Options\"* is displayed.\n\n*Expected Result:*\n\n* Credential type options should be fetched and displayed correctly, even after page refresh.\n\n*Actual Result:*\n\n* \"No Options\" message is shown instead of the available credential types.",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1301717",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1301717",
+            "key": "SOL-934",
+            "fields": {
+                "summary": "Implement server-side search and pagination for AI Agents listing",
+                "description": "Currently, in the *AI Agents page*, the backend is making an API call to fetch only the *first 1000 agents*.\n\n* When searching for agents within these 1000, results are shown correctly.\n* When searching for agents beyond the first 1000 (e.g., the 1300th agent), results are not displayed because the backend is not queried beyond the 1000th agent.\n\n*Enhancements:*\n\n# *Server-side Search*\n#* Search functionality should query the backend for agents beyond the first 1000.\n#* Searching for any agent (e.g., 1300th) should return results without issues.\n# *Pagination in UI*\n#* In the UI, only *100–200 agents should be displayed at once*.\n#* Additional agents should load only when the user navigates to the next pages (lazy loading / pagination).",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1299025",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1299025",
+            "key": "SOL-899",
+            "fields": {
+                "summary": "Credentials Card Component - Design Alignment",
+                "description": "Update the styling and markup of {{OverviewItemCard}} and {{OverviewItemRow}} to strictly adhere to the new design system guidelines. Additionally, implement performance optimizations such as memoization ({{React.memo}}) to prevent unnecessary re-renders of the individual list items or cards.\n[Figma for rows|https://www.figma.com/design/X8LeA3D2PbSorDTHeFFOO1/Agentic?node-id=4508-34440&t=XuBz0nUOwcvKpQ5h-1] \n\nphoto of credentials should be\n\n!https://lh7-qw.googleusercontent.com/slidesz/AGV_vUdJAO--QJPEl2oFA8ON1ApCE3dzPIB08CKA1Cyr-U0LufEiOEe6iFe80j6Wf6V2V739FFdHxNYeyRvP4PEk5RZfIINyhafWfQOII7tALUqb8lAV9F6rYrHvy1j8cGZ6PUTynDlTLA=s2048?key=wKMTfLJ0dHSTJB-4YrZUwQ|width=66.66666666666667%!",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1298965",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1298965",
+            "key": "SOL-890",
+            "fields": {
+                "summary": "Refactoring Types: Implementing an Extensible Hierarchy",
+                "description": "We want a clearer type system and a well-defined node hierarchy in order to simplify code maintenance, reduce duplication, and make it easier to introduce new node types in the future. The work will focus on defining a base *Node* type from which *Agent*, *Subagent*, and *AgentsPackage* will inherit common properties.\n\n{noformat}// basetype\nexport type BaseNode = {\n  id: string;\n  name: string;\n  description: string;\n  category: NodeCategory; // \"subagent\" | \"group\" | \"react\" | \"agent\" | \"package\"\n  // add other commen props\n};\n\n// Tipi specifici che estendono il tipo base\nexport type Subagent = BaseNode & {\n  role: string;\n  scope: string;\n  add subagent specifics props\n};\n\nexport type Agent = BaseNode & {\n  status: AgentStatus;\n  type: AgentType;\n  edges: AgentLink[];\n  // add only agent props\n};\n\nexport type AgentsPackage = BaseNode & {\n  version: string;\n  status: AgentStatus;\n  agents: Agent[]; // Un package contiene solo agenti\n  // add only agent package props\n};{noformat}",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1294200",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1294200",
+            "key": "SOL-888",
+            "fields": {
+                "summary": "Ctrl+Z & Ctrl+Y - Canvas Support",
+                "description": "This task is a request to implement {{Ctrl+Z}} (undo) and {{Ctrl+Y}} (redo) functionality for all actions performed on the canvas. The implementation should allow users to restore or delete an action, with all changes properly reflected in the Redux store. This feature is crucial for a seamless user experience, as it allows for easy correction of mistakes without having to manually recreate or delete work.",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1293938",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1293938",
+            "key": "SOL-886",
+            "fields": {
+                "summary": "UI Works - New Features",
+                "description": "This epic is dedicated to tracking all new features requested by stakeholders or managers. Any task categorized as a \"new feature\" within this epic must have its own dedicated feature branch. The owner of the feature branch must always update their branch by pulling the latest changes from the trunk branch, which is currently {{stable_ui}}.",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1293678",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1293678",
+            "key": "SOL-885",
+            "fields": {
+                "summary": "UI - Responsiveness",
+                "description": "This epic focuses on optimizing the layout and adaptability of the main pages of the platform to ensure a consistent user experience on different devices and screen sizes.",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1293672",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1293672",
+            "key": "SOL-884",
+            "fields": {
+                "summary": "UI - Code Improvements & Reworks",
+                "description": "This epic is dedicated to improving and refactoring existing code to optimize its quality, maintainability, and overall system performance.",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1293667",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1293667",
+            "key": "SOL-883",
+            "fields": {
+                "summary": "UI - Core Functional Bugs",
+                "description": "This epic focuses on resolving functional bugs that compromise the platform's core functionalities. The goal is to improve the overall system stability and ensure a seamless user experience.",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1270263",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1270263",
+            "key": "SOL-648",
+            "fields": {
+                "summary": "Create agent-LLM Type Field Temporarily Displays \"No LLM Selected\" on Page Reload",
+                "description": "h3. Steps to Reproduce:\n\n# Navigate to the *Create New Agent* page.\n# Ensure an LLM option is already selected.\n# Refresh the page (e.g., press {{F5}}).\n# Observe the *LLM Type field* during reload.\n\nh3. Expected Behavior:\n\n* The LLM Type field should *retain and display the selected value* seamlessly after reload.\n* No transient placeholder or incorrect status should be shown.\n\nh3. Actual Behavior:\n\n* The field *briefly displays* {{\"No LLM selected\"}} before the actual value loads.\n* The flicker may be unnoticeable in normal flow but becomes evident during testing or screen recording.\n\nPersonal notes: “per un attimo si vede No LLM selected poi si mette quello selezionato, questo perchè ci mette un pochino a caricare… vediamo cosa si può fare magari un loading qualcosa…” [~accountid:712020:7addebdd-2be3-4fb3-900c-0d05e2bc5d76] ",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/3",
+                    "description": "This work item is being actively worked on at the moment by the assignee.",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/inprogress.png",
+                    "name": "In Progress",
+                    "id": "3",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/4",
+                        "id": 4,
+                        "key": "indeterminate",
+                        "colorName": "yellow",
+                        "name": "In Progress"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1260052",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1260052",
+            "key": "SOL-427",
+            "fields": {
+                "summary": "UI - Loading and Error Management",
+                "description": "This Story focuses on improving the visual handling of loading states and error messages across the product. The goal is to identify all areas where loading and error visuals are missing, inconsistent, or could be improved. All tasks related to addressing these issues, such as implementing new loader designs, adding specific error messages, and ensuring visual consistency, will be tracked under this story.",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/3",
+                    "description": "This work item is being actively worked on at the moment by the assignee.",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/inprogress.png",
+                    "name": "In Progress",
+                    "id": "3",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/4",
+                        "id": 4,
+                        "key": "indeterminate",
+                        "colorName": "yellow",
+                        "name": "In Progress"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1259609",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1259609",
+            "key": "SOL-411",
+            "fields": {
+                "summary": "Vulnerabilities Management - UI",
+                "description": "We will use this story to track all the vulnerabilities on the ui at the beginning of this however we would need to create a complete Jenkins pipeline to take the Agentic UI code and do the scans\n\nthe folders are two one is \"agentic-ui\" and the other is \"json-forms\"\njson-forms is a sub-library linked already from agentic-ui so we need to figure out if it is enough to scan on agentic and automatically can also see the sub-libraries of json-forms to scan or we need to do two scans\n\nfor now let's start by creating the full pipeline",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1246259",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1246259",
+            "key": "SOL-139",
+            "fields": {
+                "summary": "Bottom left Canvas Navigator",
+                "description": "!Screenshot 2025-03-14 alle 15.47.31.png|width=33.333333333333336%,alt=\"Screenshot 2025-03-14 alle 15.47.31.png\"!\n\nThe navigator in the lower right should allow more controlled zooms and quick navigations:\n\n* Map button showing the chart map. (Natively supported by GoJs just needs to be implemented) \n* button for automatic relocation of nodes in a readable way.\n\nUseful links:\n\n* [GoJs - Overview Element|https://gojs.net/latest/intro/overview.html]  - Gojs integrated features for navigator maps",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1246100",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1246100",
+            "key": "SOL-120",
+            "fields": {
+                "summary": "Login Services - Extend Session Keeper from UnO",
+                "description": "-In the future this epic will be used also for implement login manager logic (keycloak or others)-\n-Implement something like this in Typescript:-\n\n-Explore the possibility to implement also OAuth2 (Microsoft and Google). Isn't important at the moment to develop is only a exploration and study in order to be ready if we will need it.-\n\nCurrently, after a period of inactivity, UnO asks you “Are you still there?” and then lets you keep your session open or, after a little longer, logs you out.\n\nThis behavior has not been extended by us, with the result that when the session expires, the Agentic user is not aware of it.\n\nSo, for now, that task must be to extend UnO's session management to Builder as well. It shouldn't be too complex.",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1246033",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1246033",
+            "key": "SOL-111",
+            "fields": {
+                "summary": "GoJs Canvas - Features",
+                "description": "Use GoJs to develop the Canvas for creation e visualization of Workflow Graph\n\nthat’s what we have done:\n\n!Screenshot 2025-08-08 alle 14.37.35.png|width=66.66666666666667%,alt=\"Screenshot 2025-08-08 alle 14.37.35.png\"!\n\nnow it’s time to improve and rework.\n\nUseful links:\n\n* [GoJs Intro Official Site|https://gojs.net/latest/intro/%20https://gojs.net/latest/]\n* [GoJs Docs|https://gojs.net/latest/intro/%20https://gojs.net/latest/]",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1246031",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1246031",
+            "key": "SOL-109",
+            "fields": {
+                "summary": "Agentic AI - Frontend Works",
+                "description": null,
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1234827",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1234827",
+            "key": "SOL-4",
+            "fields": {
+                "summary": "Agent Discovery",
+                "description": "Implement backend logic for browsing agents by domain, industry and process",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1275652",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/1275652",
+            "key": "CLARA2-3411",
+            "fields": {
+                "summary": "Pilot's Full screen feature not working",
+                "description": "Full screen feature is not working anymore on Pilot (build stable_FUI1)",
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "889963",
+            "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/issue/889963",
+            "key": "CLARA2-2891",
+            "fields": {
+                "summary": "General Clean Code",
+                "description": null,
+                "status": {
+                    "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/status/10001",
+                    "description": "(Migrated on 25 Oct 2024 07:44 UTC)",
+                    "iconUrl": "https://hclsw-jiracentral.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "To Do",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://hclsw-jiracentral.atlassian.net/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "To Do"
+                    }
+                }
+            }
+        }
+    ]
+}
