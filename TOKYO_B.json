@@ -1,0 +1,35 @@
+{
+  "nodes": [
+    {
+      "id": "JOB_A",
+      "workstation": "/IP-10-50-75-_2",
+      "workflow": "TOKYO_B",
+      "job": "JOB_A",
+      "status": "Ready"
+    },
+    {
+      "id": "JOB_B",
+      "workstation": "/IP-10-50-75-_2",
+      "workflow": "TOKYO_B",
+      "job": "JOB_B",
+      "status": "Waiting"
+    },
+    {
+      "id": "JOB_C",
+      "workstation": "/IP-10-50-75-_2",
+      "workflow": "TOKYO_B",
+      "job": "JOB_C",
+      "status": "Waiting"
+    }
+  ],
+  "links": [
+    {
+      "source": "JOB_A",
+      "target": "JOB_B"
+    },
+    {
+      "source": "JOB_A",
+      "target": "JOB_C"
+    }
+  ]
+}
