@@ -1,0 +1,46 @@
+{
+  "nodes": [
+    {
+      "id": "TASK_01",
+      "workstation": "/IP-10-200-100-_1",
+      "workflow": "NEW_YORK_A",
+      "job": "TASK_01",
+      "status": "Ready"
+    },
+    {
+      "id": "TASK_02",
+      "workstation": "/IP-10-200-100-_1",
+      "workflow": "NEW_YORK_A",
+      "job": "TASK_02",
+      "status": "Waiting"
+    },
+    {
+      "id": "TASK_03",
+      "workstation": "/IP-10-200-100-_1",
+      "workflow": "NEW_YORK_A",
+      "job": "TASK_03",
+      "status": "Waiting"
+    },
+    {
+      "id": "TASK_04",
+      "workstation": "/IP-10-200-100-_1",
+      "workflow": "NEW_YORK_A",
+      "job": "TASK_04",
+      "status": "Waiting"
+    }
+  ],
+  "links": [
+    {
+      "source": "TASK_01",
+      "target": "TASK_02"
+    },
+    {
+      "source": "TASK_02",
+      "target": "TASK_03"
+    },
+    {
+      "source": "TASK_03",
+      "target": "TASK_04"
+    }
+  ]
+}
